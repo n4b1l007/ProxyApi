@@ -49,8 +49,12 @@
     <Reference Include="System" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -72,10 +76,6 @@
     <Compile Include="TestGeneratedJavaScript.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProxyApi.Tests\ProxyApi.Tests.csproj">
-      <Project>{502a4469-3af0-40fd-886a-61bf752431ad}</Project>
-      <Name>ProxyApi.Tests</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ProxyApi\ProxyApi.csproj">
       <Project>{461d3c06-a617-4c36-9759-63800e71bce9}</Project>
       <Name>ProxyApi</Name>

@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyApi.Tests", "ProxyApi.Tests\ProxyApi.Tests.csproj", "{502A4469-3AF0-40FD-886A-61BF752431AD}"
-EndProject
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33920.266
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyApi", "ProxyApi\ProxyApi.csproj", "{461D3C06-A617-4C36-9759-63800E71BCE9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{BCEBEE73-B56A-43FC-9C56-20A12395AF5B}"
@@ -12,8 +12,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{BCEBEE73
 		nuget\Content\proxyapi.intellisense.tt = nuget\Content\proxyapi.intellisense.tt
 		ProxyApi\ProxyApi.nuspec = ProxyApi\ProxyApi.nuspec
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyApi.Tests.Integration", "ProxyApi.Tests.Integration\ProxyApi.Tests.Integration.csproj", "{003DF186-AF52-47D7-8529-9DB048668505}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0161FE1D-B9AA-4956-8A00-1C201708621F}"
 	ProjectSection(SolutionItems) = preProject
@@ -30,18 +28,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{502A4469-3AF0-40FD-886A-61BF752431AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{502A4469-3AF0-40FD-886A-61BF752431AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{502A4469-3AF0-40FD-886A-61BF752431AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{502A4469-3AF0-40FD-886A-61BF752431AD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{461D3C06-A617-4C36-9759-63800E71BCE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{461D3C06-A617-4C36-9759-63800E71BCE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{461D3C06-A617-4C36-9759-63800E71BCE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{461D3C06-A617-4C36-9759-63800E71BCE9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{003DF186-AF52-47D7-8529-9DB048668505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{003DF186-AF52-47D7-8529-9DB048668505}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{003DF186-AF52-47D7-8529-9DB048668505}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{003DF186-AF52-47D7-8529-9DB048668505}.Release|Any CPU.Build.0 = Release|Any CPU
 		{757FA25D-CA58-4AD1-9756-EEFBA16FDB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{757FA25D-CA58-4AD1-9756-EEFBA16FDB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{757FA25D-CA58-4AD1-9756-EEFBA16FDB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,5 +39,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A48B4130-028B-4660-AF39-9E2BE4E33EB4}
 	EndGlobalSection
 EndGlobal

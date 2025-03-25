@@ -1,25 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.Composition;
-using System.IO;
-using System.Linq;
-using System.Net.Http;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
-using System.Web.Http;
-using System.Web.Http.Routing;
-using System.Web.Routing;
-using ProxyApi.Templates;
 
 namespace ProxyApi
 {
-	/// <summary>
-	/// An <see cref="IHttpHandler"/> implementation that returns a cached copy of the
-	/// generated proxy script.
-	/// </summary>
-	[Export]
+    /// <summary>
+    /// An <see cref="IHttpHandler"/> implementation that returns a cached copy of the
+    /// generated proxy script.
+    /// </summary>
+    [Export]
 	public class ProxyHttpHandler : IHttpHandler
 	{
 		private static string _proxyJs;
